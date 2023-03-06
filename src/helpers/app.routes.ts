@@ -11,4 +11,5 @@ interface Params {
     },
     login: '/login',
     home: '/dashboard',
+    user: '/user'
 }
