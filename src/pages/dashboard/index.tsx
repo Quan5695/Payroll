@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { Dispatch, } from "redux"
 import { useDispatch, useSelector } from "react-redux"
-import { addTodo } from '../../redux/action';
+import { addTodo } from '../../store/action';
 
 const DashboardPage = React.memo(() => {
+
+  //Checking store
   const productList = useSelector((state: any) => state.todo);
   const dispatch: Dispatch<any> = useDispatch()
   useEffect(() => {
@@ -12,9 +14,14 @@ const DashboardPage = React.memo(() => {
   useEffect(() => {
     console.log("productList", productList)
   }, [productList])
+
+
   return (
     <>
-      DASHBOARD
+      <div>
+        <span>DASHBOARD</span>
+      </div>
+
     </>
   );
 });

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
 import { createStore } from 'redux'
-import RootReducer from './redux/reducers'
+import RootReducer from './store/reducers'
 import { Provider } from "react-redux"
 
 import App from './App';

@@ -45,7 +45,7 @@ export const RootRouter = memo(() => {
                     <Route path={AppRoutes.user} element={<UserPage/>} />
                 </Route>
             </Route>
-            <Route path="*" element={<Error404/>} />
+            <Route path="*" element={<DashboardPage/>} />
 
         </Routes>)
 })
